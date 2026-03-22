@@ -302,18 +302,55 @@ button {
 .nav__cta {
     font-size: 14px;
     font-weight: 600;
-    color: var(--color-gray-900);
+    color: var(--color-white);
     padding: 10px 24px;
-    border: 1.5px solid var(--color-gray-200);
+    border: none;
     border-radius: 100px;
-    transition: all 0.3s var(--ease-out);
+    background: var(--color-pest);
+    box-shadow: 0 0 16px rgba(22, 163, 74, 0.35), 0 2px 8px rgba(22, 163, 74, 0.2);
+    transition: all 0.35s var(--ease-out);
+    animation: ctaPulse 2.5s ease-in-out infinite;
 }
 
 .nav__cta:hover {
-    background: var(--color-gray-900);
+    background: var(--color-pest-dark);
     color: var(--color-white);
-    border-color: var(--color-gray-900);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 0 24px rgba(22, 163, 74, 0.5), 0 4px 16px rgba(22, 163, 74, 0.3);
+    transform: translateY(-1px);
+}
+
+/* Service-specific CTA colors */
+[data-service="fire"] .nav__cta {
+    background: var(--color-fire);
+    box-shadow: 0 0 16px rgba(220, 38, 38, 0.35), 0 2px 8px rgba(220, 38, 38, 0.2);
+    animation: ctaPulseFire 2.5s ease-in-out infinite;
+}
+[data-service="fire"] .nav__cta:hover {
+    background: var(--color-fire-dark);
+    box-shadow: 0 0 24px rgba(220, 38, 38, 0.5), 0 4px 16px rgba(220, 38, 38, 0.3);
+}
+
+[data-service="hygiene"] .nav__cta {
+    background: var(--color-hygiene);
+    box-shadow: 0 0 16px rgba(37, 99, 235, 0.35), 0 2px 8px rgba(37, 99, 235, 0.2);
+    animation: ctaPulseHygiene 2.5s ease-in-out infinite;
+}
+[data-service="hygiene"] .nav__cta:hover {
+    background: var(--color-hygiene-dark);
+    box-shadow: 0 0 24px rgba(37, 99, 235, 0.5), 0 4px 16px rgba(37, 99, 235, 0.3);
+}
+
+@keyframes ctaPulse {
+    0%, 100% { box-shadow: 0 0 16px rgba(22, 163, 74, 0.35), 0 2px 8px rgba(22, 163, 74, 0.2); }
+    50% { box-shadow: 0 0 22px rgba(22, 163, 74, 0.5), 0 2px 12px rgba(22, 163, 74, 0.3); }
+}
+@keyframes ctaPulseFire {
+    0%, 100% { box-shadow: 0 0 16px rgba(220, 38, 38, 0.35), 0 2px 8px rgba(220, 38, 38, 0.2); }
+    50% { box-shadow: 0 0 22px rgba(220, 38, 38, 0.5), 0 2px 12px rgba(220, 38, 38, 0.3); }
+}
+@keyframes ctaPulseHygiene {
+    0%, 100% { box-shadow: 0 0 16px rgba(37, 99, 235, 0.35), 0 2px 8px rgba(37, 99, 235, 0.2); }
+    50% { box-shadow: 0 0 22px rgba(37, 99, 235, 0.5), 0 2px 12px rgba(37, 99, 235, 0.3); }
 }
 
 /* Dropdown */
@@ -696,6 +733,26 @@ button {
     background: var(--color-pest-dark);
     transform: scale(1.02);
     box-shadow: 0 6px 28px rgba(22, 163, 74, 0.4);
+}
+
+[data-service="fire"] .mobile-menu__cta-btn {
+    background: var(--color-fire);
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.3);
+}
+[data-service="fire"] .mobile-menu__cta-btn:hover,
+[data-service="fire"] .mobile-menu__cta-btn:active {
+    background: var(--color-fire-dark);
+    box-shadow: 0 6px 28px rgba(220, 38, 38, 0.4);
+}
+
+[data-service="hygiene"] .mobile-menu__cta-btn {
+    background: var(--color-hygiene);
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
+}
+[data-service="hygiene"] .mobile-menu__cta-btn:hover,
+[data-service="hygiene"] .mobile-menu__cta-btn:active {
+    background: var(--color-hygiene-dark);
+    box-shadow: 0 6px 28px rgba(37, 99, 235, 0.4);
 }
 
 .mobile-menu__contact {
