@@ -27,14 +27,15 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
         });
 
-        // Close on link click
-        mobileMenu.querySelectorAll('a').forEach(link => {
+        // Close on any link/button click inside menu
+        mobileMenu.querySelectorAll('a, .mobile-menu__cta-btn').forEach(link => {
             link.addEventListener('click', () => {
                 mobileToggle.classList.remove('active');
                 mobileMenu.classList.remove('active');
                 document.body.style.overflow = '';
             });
         });
+
     }
 
     // ===== SERVICE TAB SWITCHER =====
@@ -151,6 +152,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 1500);
         });
     }
+
+    // ===== FAQ ACCORDION =====
+    document.querySelectorAll('.svc-faq__question').forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            const isActive = item.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.svc-faq__item').forEach(i => i.classList.remove('active'));
+
+            // Open clicked (if it wasn't already open)
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        });
+    });
 
     // ===== ADD SPIN ANIMATION =====
     const style = document.createElement('style');

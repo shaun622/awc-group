@@ -15,14 +15,27 @@
     <!-- ===== NAVIGATION ===== -->
     <nav class="nav" id="nav">
         <div class="nav__container">
-            <a href="#" class="nav__logo">
+            <a href="index.html" class="nav__logo">
                 <img src="Assets/AWC-Brand-Logo-Flat-e1769148801666.webp" alt="AWC Group" class="nav__logo-img">
             </a>
 
             <div class="nav__links">
-                <a href="#services" class="nav__link">Services</a>
+                <div class="nav__dropdown">
+                    <a href="#services" class="nav__link">Services</a>
+                    <div class="nav__dropdown-menu">
+                        <a href="pest-control.html" class="nav__dropdown-item nav__dropdown-item--pest">
+                            <span class="nav__dropdown-dot"></span>Pest Control
+                        </a>
+                        <a href="fire-safety.html" class="nav__dropdown-item nav__dropdown-item--fire">
+                            <span class="nav__dropdown-dot"></span>Fire Safety
+                        </a>
+                        <a href="hygiene-services.html" class="nav__dropdown-item nav__dropdown-item--hygiene">
+                            <span class="nav__dropdown-dot"></span>Hygiene Services
+                        </a>
+                    </div>
+                </div>
                 <a href="#about" class="nav__link">About</a>
-                <a href="#contact" class="nav__link">Contact</a>
+                <a href="#quote" class="nav__link">Contact</a>
                 <a href="#quote" class="nav__cta">Get A Quote</a>
             </div>
 
@@ -36,11 +49,59 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
-        <div class="mobile-menu__content">
-            <a href="#services" class="mobile-menu__link">Services</a>
-            <a href="#about" class="mobile-menu__link">About</a>
-            <a href="#contact" class="mobile-menu__link">Contact</a>
-            <a href="#quote" class="mobile-menu__link mobile-menu__cta">Get A Quote</a>
+        <div class="mobile-menu__bg"></div>
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__nav">
+                <a href="#services" class="mobile-menu__link" data-index="1">Services</a>
+                <a href="#about" class="mobile-menu__link" data-index="2">About</a>
+                <a href="#quote" class="mobile-menu__link" data-index="3">Contact</a>
+            </div>
+            <div class="mobile-menu__services">
+                <p class="mobile-menu__services-label">Our Divisions</p>
+                <div class="mobile-menu__services-grid">
+                    <a href="pest-control.html" class="mobile-menu__service-card mobile-menu__service-card--pest" data-index="4">
+                        <div class="mobile-menu__service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L8 8H16L12 2Z"/><circle cx="12" cy="14" r="5"/><path d="M7 14H3M21 14H17"/></svg>
+                        </div>
+                        <div class="mobile-menu__service-info">
+                            <span class="mobile-menu__service-name">Pest Control</span>
+                            <span class="mobile-menu__service-tag">AWPC</span>
+                        </div>
+                        <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </a>
+                    <a href="fire-safety.html" class="mobile-menu__service-card mobile-menu__service-card--fire" data-index="5">
+                        <div class="mobile-menu__service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 4 10 4 14C4 18.4 7.6 22 12 22C16.4 22 20 18.4 20 14C20 10 16 6 12 2Z"/></svg>
+                        </div>
+                        <div class="mobile-menu__service-info">
+                            <span class="mobile-menu__service-name">Fire Safety</span>
+                            <span class="mobile-menu__service-tag">AWFS</span>
+                        </div>
+                        <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </a>
+                    <a href="hygiene-services.html" class="mobile-menu__service-card mobile-menu__service-card--hygiene" data-index="6">
+                        <div class="mobile-menu__service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22S20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/></svg>
+                        </div>
+                        <div class="mobile-menu__service-info">
+                            <span class="mobile-menu__service-name">Hygiene Services</span>
+                            <span class="mobile-menu__service-tag">AWHS</span>
+                        </div>
+                        <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu__bottom" data-index="7">
+                <a href="#quote" class="mobile-menu__cta-btn">
+                    Get A Free Quote
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                </a>
+                <div class="mobile-menu__contact">
+                    <span>info@awcgroup.uk</span>
+                    <span class="mobile-menu__divider">&middot;</span>
+                    <span>London & South East</span>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -135,7 +196,10 @@
                                 <li>Emergency Same-Day Callouts</li>
                                 <li>Ongoing Prevention Plans</li>
                             </ul>
-                            <a href="#quote" class="btn btn--pest">Get Pest Control Quote</a>
+                            <div class="services__panel-actions">
+                                <a href="#quote" class="btn btn--pest">Get Quote</a>
+                                <a href="pest-control.html" class="btn btn--ghost">Learn More</a>
+                            </div>
                         </div>
                         <div class="services__panel-visual">
                             <div class="services__panel-image services__panel-image--pest">
@@ -165,7 +229,10 @@
                                 <li>Emergency Lighting</li>
                                 <li>Staff Fire Safety Training</li>
                             </ul>
-                            <a href="#quote" class="btn btn--fire">Get Fire Safety Quote</a>
+                            <div class="services__panel-actions">
+                                <a href="#quote" class="btn btn--fire">Get Quote</a>
+                                <a href="fire-safety.html" class="btn btn--ghost">Learn More</a>
+                            </div>
                         </div>
                         <div class="services__panel-visual">
                             <div class="services__panel-image services__panel-image--fire">
@@ -195,7 +262,10 @@
                                 <li>Waste Management Solutions</li>
                                 <li>Scheduled Maintenance Plans</li>
                             </ul>
-                            <a href="#quote" class="btn btn--hygiene">Get Hygiene Quote</a>
+                            <div class="services__panel-actions">
+                                <a href="#quote" class="btn btn--hygiene">Get Quote</a>
+                                <a href="hygiene-services.html" class="btn btn--ghost">Learn More</a>
+                            </div>
                         </div>
                         <div class="services__panel-visual">
                             <div class="services__panel-image services__panel-image--hygiene">
@@ -320,15 +390,15 @@
                 <div class="footer__links">
                     <div class="footer__col">
                         <h4 class="footer__col-title">Services</h4>
-                        <a href="#" class="footer__link">Pest Control</a>
-                        <a href="#" class="footer__link">Fire Safety</a>
-                        <a href="#" class="footer__link">Hygiene Services</a>
+                        <a href="pest-control.html" class="footer__link">Pest Control</a>
+                        <a href="fire-safety.html" class="footer__link">Fire Safety</a>
+                        <a href="hygiene-services.html" class="footer__link">Hygiene Services</a>
                     </div>
                     <div class="footer__col">
                         <h4 class="footer__col-title">Company</h4>
-                        <a href="#" class="footer__link">About Us</a>
-                        <a href="#" class="footer__link">Contact</a>
-                        <a href="#" class="footer__link">Get A Quote</a>
+                        <a href="#about" class="footer__link">About Us</a>
+                        <a href="#quote" class="footer__link">Contact</a>
+                        <a href="#quote" class="footer__link">Get A Quote</a>
                     </div>
                     <div class="footer__col">
                         <h4 class="footer__col-title">Legal</h4>

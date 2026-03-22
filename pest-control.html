@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest Control London | A Wilkinson Pest Control (AWPC)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/service-page.css">
+</head>
+<body data-service="pest">
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav nav--scrolled" id="nav">
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo">
+                <img src="Assets/AWC-Brand-Logo-Flat-e1769148801666.webp" alt="AWC Group" class="nav__logo-img">
+            </a>
+            <div class="nav__links">
+                <div class="nav__dropdown">
+                    <a href="index.html#services" class="nav__link">Services</a>
+                    <div class="nav__dropdown-menu">
+                        <a href="pest-control.html" class="nav__dropdown-item nav__dropdown-item--pest">
+                            <span class="nav__dropdown-dot"></span>Pest Control
+                        </a>
+                        <a href="fire-safety.html" class="nav__dropdown-item nav__dropdown-item--fire">
+                            <span class="nav__dropdown-dot"></span>Fire Safety
+                        </a>
+                        <a href="hygiene-services.html" class="nav__dropdown-item nav__dropdown-item--hygiene">
+                            <span class="nav__dropdown-dot"></span>Hygiene Services
+                        </a>
+                    </div>
+                </div>
+                <a href="index.html#about" class="nav__link">About</a>
+                <a href="#quote" class="nav__link">Contact</a>
+                <a href="#quote" class="nav__cta">Get A Quote</a>
+            </div>
+            <button class="nav__mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__bg"></div>
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__nav">
+                <a href="index.html#services" class="mobile-menu__link" data-index="1">Services</a>
+                <a href="index.html#about" class="mobile-menu__link" data-index="2">About</a>
+                <a href="#quote" class="mobile-menu__link" data-index="3">Contact</a>
+            </div>
+            <div class="mobile-menu__services">
+                <p class="mobile-menu__services-label">Our Divisions</p>
+                <div class="mobile-menu__services-grid">
+                    <a href="pest-control.html" class="mobile-menu__service-card mobile-menu__service-card--pest" data-index="4">
+                        <div class="mobile-menu__service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L8 8H16L12 2Z"/><circle cx="12" cy="14" r="5"/><path d="M7 14H3M21 14H17"/></svg>
+                        </div>
+                        <div class="mobile-menu__service-info">
+                            <span class="mobile-menu__service-name">Pest Control</span>
+                            <span class="mobile-menu__service-tag">AWPC</span>
+                        </div>
+                        <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </a>
+                    <a href="fire-safety.html" class="mobile-menu__service-card mobile-menu__service-card--fire" data-index="5">
+                        <div class="mobile-menu__service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 4 10 4 14C4 18.4 7.6 22 12 22C16.4 22 20 18.4 20 14C20 10 16 6 12 2Z"/></svg>
+                        </div>
+                        <div class="mobile-menu__service-info">
+                            <span class="mobile-menu__service-name">Fire Safety</span>
+                            <span class="mobile-menu__service-tag">AWFS</span>
+                        </div>
+                        <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </a>
+                    <a href="hygiene-services.html" class="mobile-menu__service-card mobile-menu__service-card--hygiene" data-index="6">
+                        <div class="mobile-menu__service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22S20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/></svg>
+                        </div>
+                        <div class="mobile-menu__service-info">
+                            <span class="mobile-menu__service-name">Hygiene Services</span>
+                            <span class="mobile-menu__service-tag">AWHS</span>
+                        </div>
+                        <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu__bottom" data-index="7">
+                <a href="#quote" class="mobile-menu__cta-btn">
+                    Get A Free Quote
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                </a>
+                <div class="mobile-menu__contact">
+                    <span>info@awcgroup.uk</span>
+                    <span class="mobile-menu__divider">&middot;</span>
+                    <span>London & South East</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== SERVICE HERO ===== -->
+    <section class="svc-hero svc-hero--pest">
+        <div class="svc-hero__container">
+            <div class="svc-hero__content fade-up">
+                <div class="svc-hero__badge">AWPC</div>
+                <h1 class="svc-hero__title">A Wilkinson<br><span>Pest Control</span></h1>
+                <p class="svc-hero__subtitle">Fast, professional pest control for homes and businesses across London and the South East. No fuss, no pests.</p>
+                <div class="svc-hero__actions">
+                    <a href="#quote" class="btn btn--pest">Get A Free Quote</a>
+                    <a href="tel:+440000000000" class="btn btn--ghost">Call Now</a>
+                </div>
+            </div>
+            <div class="svc-hero__stats fade-up" style="animation-delay: 0.15s">
+                <div class="svc-hero__stat">
+                    <span class="svc-hero__stat-number">24hr</span>
+                    <span class="svc-hero__stat-label">Emergency Response</span>
+                </div>
+                <div class="svc-hero__stat">
+                    <span class="svc-hero__stat-number">100%</span>
+                    <span class="svc-hero__stat-label">Satisfaction Rate</span>
+                </div>
+                <div class="svc-hero__stat">
+                    <span class="svc-hero__stat-number">Safe</span>
+                    <span class="svc-hero__stat-label">Pet & Child Friendly</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES GRID ===== -->
+    <section class="svc-detail">
+        <div class="svc-detail__container">
+            <div class="svc-detail__header fade-up">
+                <p class="section-label">What We Cover</p>
+                <h2 class="section-title">Comprehensive Pest Solutions</h2>
+                <p class="section-subtitle">Whatever the pest, we have the expertise and equipment to deal with it quickly and effectively.</p>
+            </div>
+            <div class="svc-detail__grid">
+                <div class="svc-detail__card fade-up">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--pest">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Rodent Control</h3>
+                    <p class="svc-detail__card-desc">Mice and rat removal with prevention strategies to stop them coming back. We identify entry points and seal them for good.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.08s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--pest">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L8 8H16L12 2Z"/><circle cx="12" cy="14" r="5"/><path d="M7 14H3M21 14H17"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Insect Removal</h3>
+                    <p class="svc-detail__card-desc">From cockroaches and bed bugs to ants and fleas. Thorough treatments that eliminate infestations at the source.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.16s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--pest">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9L12 2L21 9V20C21 20.55 20.55 21 20 21H4C3.45 21 3 20.55 3 20V9Z"/><path d="M9 22V12H15V22"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Residential Pest Control</h3>
+                    <p class="svc-detail__card-desc">Protect your home and family. Discreet, safe treatments with minimal disruption to your daily life.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.24s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--pest">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5C16 3.9 15.1 3 14 3H10C8.9 3 8 3.9 8 5V7"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Commercial Services</h3>
+                    <p class="svc-detail__card-desc">Tailored pest management for offices, restaurants, warehouses, and retail. Stay compliant and pest-free.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.32s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--pest">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14H12L11 22L21 10H12L13 2Z"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Emergency Callouts</h3>
+                    <p class="svc-detail__card-desc">Same-day emergency response available. When you need us urgently, we'll be there fast.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.4s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--pest">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22Z"/><path d="M12 6V12L16 14"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Prevention Plans</h3>
+                    <p class="svc-detail__card-desc">Scheduled visits and monitoring to keep your property pest-free year-round. Prevention is always better than cure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="svc-process">
+        <div class="svc-process__container">
+            <div class="svc-process__header fade-up">
+                <p class="section-label">How It Works</p>
+                <h2 class="section-title">Three Simple Steps</h2>
+            </div>
+            <div class="svc-process__steps">
+                <div class="svc-process__step fade-up">
+                    <div class="svc-process__step-number svc-process__step-number--pest">1</div>
+                    <h3 class="svc-process__step-title">Get In Touch</h3>
+                    <p class="svc-process__step-desc">Fill out our quick form or give us a call. Tell us about your pest problem and we'll arrange a convenient time to visit.</p>
+                </div>
+                <div class="svc-process__step-line"></div>
+                <div class="svc-process__step fade-up" style="animation-delay: 0.1s">
+                    <div class="svc-process__step-number svc-process__step-number--pest">2</div>
+                    <h3 class="svc-process__step-title">Free Inspection</h3>
+                    <p class="svc-process__step-desc">We'll assess the situation, identify the pest, and provide a clear, no-obligation quote with a recommended treatment plan.</p>
+                </div>
+                <div class="svc-process__step-line"></div>
+                <div class="svc-process__step fade-up" style="animation-delay: 0.2s">
+                    <div class="svc-process__step-number svc-process__step-number--pest">3</div>
+                    <h3 class="svc-process__step-title">Treatment & Prevention</h3>
+                    <p class="svc-process__step-desc">We carry out the treatment, remove the problem, and put prevention measures in place so they don't come back.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="svc-faq">
+        <div class="svc-faq__container">
+            <div class="svc-faq__header fade-up">
+                <p class="section-label">Common Questions</p>
+                <h2 class="section-title">Pest Control FAQ</h2>
+            </div>
+            <div class="svc-faq__list fade-up">
+                <div class="svc-faq__item">
+                    <button class="svc-faq__question">
+                        <span>How quickly can you respond to an emergency?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9L12 15L18 9"/></svg>
+                    </button>
+                    <div class="svc-faq__answer">
+                        <p>We offer same-day emergency callouts across London and the South East. In most cases, we can be with you within a few hours of your call.</p>
+                    </div>
+                </div>
+                <div class="svc-faq__item">
+                    <button class="svc-faq__question">
+                        <span>Are your treatments safe for pets and children?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9L12 15L18 9"/></svg>
+                    </button>
+                    <div class="svc-faq__answer">
+                        <p>Absolutely. We use modern, approved treatments that are safe for your family and pets. We'll always advise you on any precautions needed.</p>
+                    </div>
+                </div>
+                <div class="svc-faq__item">
+                    <button class="svc-faq__question">
+                        <span>Do you offer ongoing pest prevention?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9L12 15L18 9"/></svg>
+                    </button>
+                    <div class="svc-faq__answer">
+                        <p>Yes. We offer scheduled prevention plans with regular inspections and treatments to keep your property pest-free year-round. This is especially popular with commercial clients.</p>
+                    </div>
+                </div>
+                <div class="svc-faq__item">
+                    <button class="svc-faq__question">
+                        <span>What areas do you cover?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9L12 15L18 9"/></svg>
+                    </button>
+                    <div class="svc-faq__answer">
+                        <p>We cover all of London and the wider South East of England. If you're unsure whether we cover your area, just get in touch and we'll let you know.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA + QUOTE ===== -->
+    <section class="quote" id="quote">
+        <div class="quote__container">
+            <div class="quote__left fade-up">
+                <p class="section-label">Get Started</p>
+                <h2 class="section-title section-title--light">Get Your Free<br>Pest Control Quote.</h2>
+                <p class="quote__desc">Tell us about your pest problem and we'll get back to you within 2 hours during business hours.</p>
+                <div class="quote__contact-info">
+                    <div class="quote__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.63 21 20.25 21.01 19.88 21C14.52 20.44 9.47 18.27 5.44 14.56C1.73 11.03 -0.27 6.27 0.03 1.35C0.07 0.78 0.52 0.33 1.08 0.33H4.08C4.58 0.33 5 0.71 5.05 1.2C5.14 2.09 5.33 2.96 5.61 3.8L3.79 5.62C5.85 9.35 8.98 12.48 12.71 14.54L14.53 12.72C15.37 13 16.24 13.19 17.13 13.28C17.62 13.33 18 13.75 18 14.25V16.92H22Z" transform="translate(1,1)"/></svg>
+                        <span>Call us anytime</span>
+                    </div>
+                    <div class="quote__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+                        <span>info@awcgroup.uk</span>
+                    </div>
+                </div>
+            </div>
+            <div class="quote__right fade-up" style="animation-delay: 0.15s">
+                <form class="quote__form" id="quoteForm">
+                    <div class="quote__form-row">
+                        <div class="quote__form-group">
+                            <label class="quote__form-label">First Name</label>
+                            <input type="text" class="quote__form-input" placeholder="John" required>
+                        </div>
+                        <div class="quote__form-group">
+                            <label class="quote__form-label">Last Name</label>
+                            <input type="text" class="quote__form-input" placeholder="Smith" required>
+                        </div>
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Email</label>
+                        <input type="email" class="quote__form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Phone</label>
+                        <input type="tel" class="quote__form-input" placeholder="+44 7XXX XXX XXX">
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Describe your pest problem</label>
+                        <textarea class="quote__form-input quote__form-textarea" placeholder="What type of pest? How long has it been an issue?" rows="4"></textarea>
+                    </div>
+                    <input type="hidden" name="service" value="pest-control">
+                    <button type="submit" class="btn btn--pest btn--full">
+                        Send Quote Request
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OTHER SERVICES ===== -->
+    <section class="svc-other">
+        <div class="svc-other__container">
+            <p class="section-label" style="text-align:center">Other Services</p>
+            <div class="svc-other__grid">
+                <a href="fire-safety.html" class="svc-other__card svc-other__card--fire">
+                    <div class="svc-other__card-badge">AWFS</div>
+                    <h3>Fire Safety</h3>
+                    <p>Risk assessments, equipment & compliance</p>
+                    <span class="svc-other__card-link">Learn More &rarr;</span>
+                </a>
+                <a href="hygiene-services.html" class="svc-other__card svc-other__card--hygiene">
+                    <div class="svc-other__card-badge">AWHS</div>
+                    <h3>Hygiene Services</h3>
+                    <p>Commercial cleaning & sanitation</p>
+                    <span class="svc-other__card-link">Learn More &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="Assets/AWC-Brand-Logo-Flat-e1769148801666.webp" alt="AWC Group" class="footer__logo-img">
+                    <p class="footer__tagline">A Wilkinson Company Ltd.<br>Protecting what matters most.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Services</h4>
+                        <a href="pest-control.html" class="footer__link">Pest Control</a>
+                        <a href="fire-safety.html" class="footer__link">Fire Safety</a>
+                        <a href="hygiene-services.html" class="footer__link">Hygiene Services</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Company</h4>
+                        <a href="index.html#about" class="footer__link">About Us</a>
+                        <a href="#quote" class="footer__link">Contact</a>
+                        <a href="#quote" class="footer__link">Get A Quote</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Legal</h4>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__link">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 A Wilkinson Company Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

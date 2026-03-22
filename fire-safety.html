@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Safety London | A Wilkinson Fire Safety (AWFS)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/service-page.css">
+</head>
+<body data-service="fire">
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav nav--scrolled" id="nav">
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo">
+                <img src="Assets/AWC-Brand-Logo-Flat-e1769148801666.webp" alt="AWC Group" class="nav__logo-img">
+            </a>
+            <div class="nav__links">
+                <div class="nav__dropdown">
+                    <a href="index.html#services" class="nav__link">Services</a>
+                    <div class="nav__dropdown-menu">
+                        <a href="pest-control.html" class="nav__dropdown-item nav__dropdown-item--pest">
+                            <span class="nav__dropdown-dot"></span>Pest Control
+                        </a>
+                        <a href="fire-safety.html" class="nav__dropdown-item nav__dropdown-item--fire">
+                            <span class="nav__dropdown-dot"></span>Fire Safety
+                        </a>
+                        <a href="hygiene-services.html" class="nav__dropdown-item nav__dropdown-item--hygiene">
+                            <span class="nav__dropdown-dot"></span>Hygiene Services
+                        </a>
+                    </div>
+                </div>
+                <a href="index.html#about" class="nav__link">About</a>
+                <a href="#quote" class="nav__link">Contact</a>
+                <a href="#quote" class="nav__cta">Get A Quote</a>
+            </div>
+            <button class="nav__mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__bg"></div>
+        <div class="mobile-menu__inner">
+            <div class="mobile-menu__nav">
+                <a href="index.html#services" class="mobile-menu__link" data-index="1">Services</a>
+                <a href="index.html#about" class="mobile-menu__link" data-index="2">About</a>
+                <a href="#quote" class="mobile-menu__link" data-index="3">Contact</a>
+            </div>
+            <div class="mobile-menu__services">
+                <p class="mobile-menu__services-label">Our Divisions</p>
+                <div class="mobile-menu__services-grid">
+                    <a href="pest-control.html" class="mobile-menu__service-card mobile-menu__service-card--pest" data-index="4">
+                        <div class="mobile-menu__service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L8 8H16L12 2Z"/><circle cx="12" cy="14" r="5"/><path d="M7 14H3M21 14H17"/></svg>
+                        </div>
+                        <div class="mobile-menu__service-info">
+                            <span class="mobile-menu__service-name">Pest Control</span>
+                            <span class="mobile-menu__service-tag">AWPC</span>
+                        </div>
+                        <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </a>
+                    <a href="fire-safety.html" class="mobile-menu__service-card mobile-menu__service-card--fire" data-index="5">
+                        <div class="mobile-menu__service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 4 10 4 14C4 18.4 7.6 22 12 22C16.4 22 20 18.4 20 14C20 10 16 6 12 2Z"/></svg>
+                        </div>
+                        <div class="mobile-menu__service-info">
+                            <span class="mobile-menu__service-name">Fire Safety</span>
+                            <span class="mobile-menu__service-tag">AWFS</span>
+                        </div>
+                        <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </a>
+                    <a href="hygiene-services.html" class="mobile-menu__service-card mobile-menu__service-card--hygiene" data-index="6">
+                        <div class="mobile-menu__service-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22S20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/></svg>
+                        </div>
+                        <div class="mobile-menu__service-info">
+                            <span class="mobile-menu__service-name">Hygiene Services</span>
+                            <span class="mobile-menu__service-tag">AWHS</span>
+                        </div>
+                        <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="mobile-menu__bottom" data-index="7">
+                <a href="#quote" class="mobile-menu__cta-btn">
+                    Get A Free Quote
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                </a>
+                <div class="mobile-menu__contact">
+                    <span>info@awcgroup.uk</span>
+                    <span class="mobile-menu__divider">&middot;</span>
+                    <span>London & South East</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== SERVICE HERO ===== -->
+    <section class="svc-hero svc-hero--fire">
+        <div class="svc-hero__container">
+            <div class="svc-hero__content fade-up">
+                <div class="svc-hero__badge svc-hero__badge--fire">AWFS</div>
+                <h1 class="svc-hero__title">A Wilkinson<br><span>Fire Safety</span></h1>
+                <p class="svc-hero__subtitle">Comprehensive fire safety services to keep your premises compliant and your people safe. Expert assessments, installations, and training.</p>
+                <div class="svc-hero__actions">
+                    <a href="#quote" class="btn btn--fire">Get A Free Quote</a>
+                    <a href="tel:+440000000000" class="btn btn--ghost">Call Now</a>
+                </div>
+            </div>
+            <div class="svc-hero__stats fade-up" style="animation-delay: 0.15s">
+                <div class="svc-hero__stat">
+                    <span class="svc-hero__stat-number">100%</span>
+                    <span class="svc-hero__stat-label">Compliance Focused</span>
+                </div>
+                <div class="svc-hero__stat">
+                    <span class="svc-hero__stat-number">Certified</span>
+                    <span class="svc-hero__stat-label">Qualified Engineers</span>
+                </div>
+                <div class="svc-hero__stat">
+                    <span class="svc-hero__stat-number">All Sectors</span>
+                    <span class="svc-hero__stat-label">Commercial & Residential</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES GRID ===== -->
+    <section class="svc-detail">
+        <div class="svc-detail__container">
+            <div class="svc-detail__header fade-up">
+                <p class="section-label">What We Offer</p>
+                <h2 class="section-title">Complete Fire Safety Solutions</h2>
+                <p class="section-subtitle">From risk assessments to equipment installation and staff training — everything you need under one roof.</p>
+            </div>
+            <div class="svc-detail__grid">
+                <div class="svc-detail__card fade-up">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--fire">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 5H7C5.9 5 5 5.9 5 7V19C5 20.1 5.9 21 7 21H17C18.1 21 19 20.1 19 19V7C19 5.9 18.1 5 17 5H15"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="M9 12L11 14L15 10"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Fire Risk Assessments</h3>
+                    <p class="svc-detail__card-desc">Thorough assessments of your premises identifying hazards, evaluating risks, and providing actionable recommendations to meet legal requirements.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.08s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--fire">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 4 10 4 14C4 18.4 7.6 22 12 22C16.4 22 20 18.4 20 14C20 10 16 6 12 2Z"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Fire Extinguishers</h3>
+                    <p class="svc-detail__card-desc">Supply, installation, and annual servicing of all extinguisher types. We ensure the right equipment is in the right places.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.16s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--fire">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 8A6 6 0 1 0 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"/><path d="M13.73 21A2 2 0 0 1 10.27 21"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Fire Alarm Systems</h3>
+                    <p class="svc-detail__card-desc">Design, installation, commissioning, and ongoing maintenance of fire alarm systems to BS 5839 standards.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.24s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--fire">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18H4C3.45 18 3 17.55 3 17V7C3 6.45 3.45 6 4 6H9"/><path d="M15 6H20C20.55 6 21 6.45 21 7V17C21 17.55 20.55 18 20 18H15"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Emergency Lighting</h3>
+                    <p class="svc-detail__card-desc">Installation and testing of emergency lighting systems ensuring safe evacuation routes are always illuminated.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.32s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--fire">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21V19C17 16.8 15.2 15 13 15H5C2.8 15 1 16.8 1 19V21"/><circle cx="9" cy="7" r="4"/><path d="M23 21V19C23 17.3 21.8 15.8 20 15.3"/><path d="M16 3.1C17.8 3.6 19 5.1 19 6.8C19 8.5 17.8 10 16 10.5"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Staff Training</h3>
+                    <p class="svc-detail__card-desc">Fire safety awareness, fire marshal training, and evacuation procedure training for your team. Certified and practical.</p>
+                </div>
+                <div class="svc-detail__card fade-up" style="animation-delay: 0.4s">
+                    <div class="svc-detail__card-icon svc-detail__card-icon--fire">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9H21M9 3V21"/></svg>
+                    </div>
+                    <h3 class="svc-detail__card-title">Fire Safety Signage</h3>
+                    <p class="svc-detail__card-desc">Compliant fire safety signs, fire action notices, and evacuation plans designed and installed to current regulations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="svc-process">
+        <div class="svc-process__container">
+            <div class="svc-process__header fade-up">
+                <p class="section-label">How It Works</p>
+                <h2 class="section-title">Three Simple Steps</h2>
+            </div>
+            <div class="svc-process__steps">
+                <div class="svc-process__step fade-up">
+                    <div class="svc-process__step-number svc-process__step-number--fire">1</div>
+                    <h3 class="svc-process__step-title">Book A Survey</h3>
+                    <p class="svc-process__step-desc">Contact us to arrange a convenient time. We'll visit your premises and carry out a full fire safety assessment.</p>
+                </div>
+                <div class="svc-process__step-line"></div>
+                <div class="svc-process__step fade-up" style="animation-delay: 0.1s">
+                    <div class="svc-process__step-number svc-process__step-number--fire">2</div>
+                    <h3 class="svc-process__step-title">Detailed Report</h3>
+                    <p class="svc-process__step-desc">You'll receive a comprehensive report with findings, recommendations, and a clear quote for any work needed.</p>
+                </div>
+                <div class="svc-process__step-line"></div>
+                <div class="svc-process__step fade-up" style="animation-delay: 0.2s">
+                    <div class="svc-process__step-number svc-process__step-number--fire">3</div>
+                    <h3 class="svc-process__step-title">Install & Certify</h3>
+                    <p class="svc-process__step-desc">We complete all installations, servicing, and provide certification. Ongoing maintenance keeps you compliant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="svc-faq">
+        <div class="svc-faq__container">
+            <div class="svc-faq__header fade-up">
+                <p class="section-label">Common Questions</p>
+                <h2 class="section-title">Fire Safety FAQ</h2>
+            </div>
+            <div class="svc-faq__list fade-up">
+                <div class="svc-faq__item">
+                    <button class="svc-faq__question">
+                        <span>Do I legally need a fire risk assessment?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9L12 15L18 9"/></svg>
+                    </button>
+                    <div class="svc-faq__answer">
+                        <p>Yes. Under the Regulatory Reform (Fire Safety) Order 2005, all non-domestic premises in England and Wales must have a suitable and sufficient fire risk assessment. This includes offices, shops, restaurants, HMOs, and communal areas of residential buildings.</p>
+                    </div>
+                </div>
+                <div class="svc-faq__item">
+                    <button class="svc-faq__question">
+                        <span>How often should fire extinguishers be serviced?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9L12 15L18 9"/></svg>
+                    </button>
+                    <div class="svc-faq__answer">
+                        <p>Fire extinguishers should be professionally serviced annually. They also need a more thorough extended service at intervals of 5 or 10 years depending on the type.</p>
+                    </div>
+                </div>
+                <div class="svc-faq__item">
+                    <button class="svc-faq__question">
+                        <span>What fire alarm system do I need?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9L12 15L18 9"/></svg>
+                    </button>
+                    <div class="svc-faq__answer">
+                        <p>This depends on the type and size of your premises. We'll assess your building and recommend the appropriate system category (L1-L5 or P1-P2) based on BS 5839 standards and your fire risk assessment.</p>
+                    </div>
+                </div>
+                <div class="svc-faq__item">
+                    <button class="svc-faq__question">
+                        <span>Do you provide fire marshal training?</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9L12 15L18 9"/></svg>
+                    </button>
+                    <div class="svc-faq__answer">
+                        <p>Yes. We offer fire awareness training for all staff and dedicated fire marshal/warden training. Sessions can be held at your premises at a time that suits you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA + QUOTE ===== -->
+    <section class="quote" id="quote">
+        <div class="quote__container">
+            <div class="quote__left fade-up">
+                <p class="section-label">Get Started</p>
+                <h2 class="section-title section-title--light">Get Your Free<br>Fire Safety Quote.</h2>
+                <p class="quote__desc">Tell us about your premises and we'll arrange a survey. No obligation, no pressure.</p>
+                <div class="quote__contact-info">
+                    <div class="quote__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.63 21 20.25 21.01 19.88 21C14.52 20.44 9.47 18.27 5.44 14.56C1.73 11.03 -0.27 6.27 0.03 1.35C0.07 0.78 0.52 0.33 1.08 0.33H4.08C4.58 0.33 5 0.71 5.05 1.2C5.14 2.09 5.33 2.96 5.61 3.8L3.79 5.62C5.85 9.35 8.98 12.48 12.71 14.54L14.53 12.72C15.37 13 16.24 13.19 17.13 13.28C17.62 13.33 18 13.75 18 14.25V16.92H22Z" transform="translate(1,1)"/></svg>
+                        <span>Call us anytime</span>
+                    </div>
+                    <div class="quote__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+                        <span>info@awcgroup.uk</span>
+                    </div>
+                </div>
+            </div>
+            <div class="quote__right fade-up" style="animation-delay: 0.15s">
+                <form class="quote__form" id="quoteForm">
+                    <div class="quote__form-row">
+                        <div class="quote__form-group">
+                            <label class="quote__form-label">First Name</label>
+                            <input type="text" class="quote__form-input" placeholder="John" required>
+                        </div>
+                        <div class="quote__form-group">
+                            <label class="quote__form-label">Last Name</label>
+                            <input type="text" class="quote__form-input" placeholder="Smith" required>
+                        </div>
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Email</label>
+                        <input type="email" class="quote__form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Phone</label>
+                        <input type="tel" class="quote__form-input" placeholder="+44 7XXX XXX XXX">
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Tell us about your premises</label>
+                        <textarea class="quote__form-input quote__form-textarea" placeholder="Type of building, number of floors, current fire safety setup..." rows="4"></textarea>
+                    </div>
+                    <input type="hidden" name="service" value="fire-safety">
+                    <button type="submit" class="btn btn--fire btn--full">
+                        Send Quote Request
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== OTHER SERVICES ===== -->
+    <section class="svc-other">
+        <div class="svc-other__container">
+            <p class="section-label" style="text-align:center">Other Services</p>
+            <div class="svc-other__grid">
+                <a href="pest-control.html" class="svc-other__card svc-other__card--pest">
+                    <div class="svc-other__card-badge">AWPC</div>
+                    <h3>Pest Control</h3>
+                    <p>Fast, effective pest removal & prevention</p>
+                    <span class="svc-other__card-link">Learn More &rarr;</span>
+                </a>
+                <a href="hygiene-services.html" class="svc-other__card svc-other__card--hygiene">
+                    <div class="svc-other__card-badge">AWHS</div>
+                    <h3>Hygiene Services</h3>
+                    <p>Commercial cleaning & sanitation</p>
+                    <span class="svc-other__card-link">Learn More &rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="Assets/AWC-Brand-Logo-Flat-e1769148801666.webp" alt="AWC Group" class="footer__logo-img">
+                    <p class="footer__tagline">A Wilkinson Company Ltd.<br>Protecting what matters most.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Services</h4>
+                        <a href="pest-control.html" class="footer__link">Pest Control</a>
+                        <a href="fire-safety.html" class="footer__link">Fire Safety</a>
+                        <a href="hygiene-services.html" class="footer__link">Hygiene Services</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Company</h4>
+                        <a href="index.html#about" class="footer__link">About Us</a>
+                        <a href="#quote" class="footer__link">Contact</a>
+                        <a href="#quote" class="footer__link">Get A Quote</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Legal</h4>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__link">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 A Wilkinson Company Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
