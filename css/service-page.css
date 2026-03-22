@@ -124,8 +124,6 @@
     left: 0;
     right: 0;
     height: 3px;
-    opacity: 0;
-    transition: opacity 0.4s var(--ease-out);
 }
 
 [data-service="pest"] .svc-hero__stat::before { background: linear-gradient(90deg, var(--color-pest), var(--color-pest-dark)); }
@@ -135,10 +133,6 @@
 .svc-hero__stat:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-}
-
-.svc-hero__stat:hover::before {
-    opacity: 1;
 }
 
 .svc-hero__stat-number {
@@ -203,10 +197,11 @@
     background: var(--color-white);
     padding: 36px 32px;
     border-radius: var(--radius-lg);
-    border: 1px solid var(--color-gray-100);
+    border: 1px solid transparent;
     transition: all 0.45s var(--ease-out);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.02);
 }
 
 .svc-detail__card::before {
@@ -216,32 +211,34 @@
     left: 0;
     right: 0;
     height: 3px;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: transform 0.45s var(--ease-out);
 }
 
 [data-service="pest"] .svc-detail__card::before { background: linear-gradient(90deg, var(--color-pest), var(--color-pest-dark)); }
 [data-service="fire"] .svc-detail__card::before { background: linear-gradient(90deg, var(--color-fire), var(--color-fire-dark)); }
 [data-service="hygiene"] .svc-detail__card::before { background: linear-gradient(90deg, var(--color-hygiene), var(--color-hygiene-dark)); }
 
-.svc-detail__card:hover {
-    transform: translateY(-6px);
-    border-color: transparent;
+[data-service="pest"] .svc-detail__card {
+    box-shadow: 0 4px 20px rgba(22, 163, 74, 0.06), 0 1px 4px rgba(0, 0, 0, 0.02);
+}
+[data-service="fire"] .svc-detail__card {
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.06), 0 1px 4px rgba(0, 0, 0, 0.02);
+}
+[data-service="hygiene"] .svc-detail__card {
+    box-shadow: 0 4px 20px rgba(37, 99, 235, 0.06), 0 1px 4px rgba(0, 0, 0, 0.02);
 }
 
-.svc-detail__card:hover::before {
-    transform: scaleX(1);
+.svc-detail__card:hover {
+    transform: translateY(-6px);
 }
 
 [data-service="pest"] .svc-detail__card:hover {
-    box-shadow: 0 12px 40px rgba(22, 163, 74, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 16px 48px rgba(22, 163, 74, 0.15), 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 [data-service="fire"] .svc-detail__card:hover {
-    box-shadow: 0 12px 40px rgba(220, 38, 38, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 16px 48px rgba(220, 38, 38, 0.15), 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 [data-service="hygiene"] .svc-detail__card:hover {
-    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 16px 48px rgba(37, 99, 235, 0.15), 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .svc-detail__card-icon {
