@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWC Group | A Wilkinson Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav class="nav" id="nav">
+        <div class="nav__container">
+            <a href="#" class="nav__logo">
+                <img src="assets/AWC-Brand-Logo-Flat-e1769148801666.webp" alt="AWC Group" class="nav__logo-img">
+            </a>
+
+            <div class="nav__links">
+                <a href="#services" class="nav__link">Services</a>
+                <a href="#about" class="nav__link">About</a>
+                <a href="#contact" class="nav__link">Contact</a>
+                <a href="#quote" class="nav__cta">Get A Quote</a>
+            </div>
+
+            <button class="nav__mobile-toggle" id="mobileToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu__content">
+            <a href="#services" class="mobile-menu__link">Services</a>
+            <a href="#about" class="mobile-menu__link">About</a>
+            <a href="#contact" class="mobile-menu__link">Contact</a>
+            <a href="#quote" class="mobile-menu__link mobile-menu__cta">Get A Quote</a>
+        </div>
+    </div>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__gradient"></div>
+        </div>
+        <div class="hero__container">
+            <div class="hero__content fade-up">
+                <p class="hero__label">A Wilkinson Company</p>
+                <h1 class="hero__title">
+                    Protecting What<br>
+                    <span class="hero__title-accent">Matters Most.</span>
+                </h1>
+                <p class="hero__subtitle">
+                    Professional pest control, fire safety, and hygiene services across London and the South East. One company, complete protection.
+                </p>
+                <div class="hero__actions">
+                    <a href="#quote" class="btn btn--primary">Get A Free Quote</a>
+                    <a href="#services" class="btn btn--ghost">Our Services</a>
+                </div>
+            </div>
+            <div class="hero__visual fade-up" style="animation-delay: 0.2s">
+                <div class="hero__cards">
+                    <div class="hero__card hero__card--pest" data-service="pest">
+                        <div class="hero__card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L8 8H16L12 2Z"/><circle cx="12" cy="14" r="5"/><path d="M7 14H3M21 14H17M8 19L5 22M16 19L19 22"/></svg>
+                        </div>
+                        <span>Pest Control</span>
+                    </div>
+                    <div class="hero__card hero__card--fire" data-service="fire">
+                        <div class="hero__card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 4 10 4 14C4 18.4 7.6 22 12 22C16.4 22 20 18.4 20 14C20 10 16 6 12 2Z"/><path d="M12 22C10 22 8 20 8 18C8 16 10 14 12 12C14 14 16 16 16 18C16 20 14 22 12 22Z"/></svg>
+                        </div>
+                        <span>Fire Safety</span>
+                    </div>
+                    <div class="hero__card hero__card--hygiene" data-service="hygiene">
+                        <div class="hero__card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6L7 4V20L3 22V6Z"/><path d="M7 4L12 2V18L7 20V4Z"/><path d="M12 6C12 6 14 4 16 4C20 4 21 8 21 10C21 14 16 18 12 18"/></svg>
+                        </div>
+                        <span>Hygiene</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICE SWITCHER ===== -->
+    <section class="services" id="services">
+        <div class="services__container">
+            <div class="services__header fade-up">
+                <p class="section-label">What We Do</p>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Three specialist divisions, one trusted company. Select a service to learn more.</p>
+            </div>
+
+            <!-- Service Tabs -->
+            <div class="services__tabs fade-up">
+                <button class="services__tab services__tab--active" data-tab="pest">
+                    <span class="services__tab-dot services__tab-dot--pest"></span>
+                    Pest Control
+                </button>
+                <button class="services__tab" data-tab="fire">
+                    <span class="services__tab-dot services__tab-dot--fire"></span>
+                    Fire Safety
+                </button>
+                <button class="services__tab" data-tab="hygiene">
+                    <span class="services__tab-dot services__tab-dot--hygiene"></span>
+                    Hygiene Services
+                </button>
+            </div>
+
+            <!-- Service Panels -->
+            <div class="services__panels">
+                <!-- PEST CONTROL -->
+                <div class="services__panel services__panel--active" data-panel="pest">
+                    <div class="services__panel-content">
+                        <div class="services__panel-text">
+                            <div class="services__panel-badge services__panel-badge--pest">AWPC</div>
+                            <h3 class="services__panel-title">A Wilkinson<br>Pest Control</h3>
+                            <p class="services__panel-desc">
+                                Fast, effective, no-fuss pest control for homes and businesses across London. From rodents to insects, we handle it all with modern, safe treatments that protect your property and peace of mind.
+                            </p>
+                            <ul class="services__panel-list">
+                                <li>Rodent Control & Prevention</li>
+                                <li>Insect & Crawling Pest Removal</li>
+                                <li>Commercial Pest Management</li>
+                                <li>Emergency Same-Day Callouts</li>
+                                <li>Ongoing Prevention Plans</li>
+                            </ul>
+                            <a href="#quote" class="btn btn--pest">Get Pest Control Quote</a>
+                        </div>
+                        <div class="services__panel-visual">
+                            <div class="services__panel-image services__panel-image--pest">
+                                <div class="services__panel-overlay"></div>
+                                <div class="services__panel-stat">
+                                    <span class="services__panel-stat-number">24hr</span>
+                                    <span class="services__panel-stat-label">Emergency Response</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIRE SAFETY -->
+                <div class="services__panel" data-panel="fire">
+                    <div class="services__panel-content">
+                        <div class="services__panel-text">
+                            <div class="services__panel-badge services__panel-badge--fire">AWFS</div>
+                            <h3 class="services__panel-title">A Wilkinson<br>Fire Safety</h3>
+                            <p class="services__panel-desc">
+                                Comprehensive fire safety solutions to keep your premises compliant and your people safe. Expert risk assessments, equipment installation, and ongoing maintenance you can trust.
+                            </p>
+                            <ul class="services__panel-list">
+                                <li>Fire Risk Assessments</li>
+                                <li>Fire Extinguisher Supply & Service</li>
+                                <li>Fire Alarm Installation & Testing</li>
+                                <li>Emergency Lighting</li>
+                                <li>Staff Fire Safety Training</li>
+                            </ul>
+                            <a href="#quote" class="btn btn--fire">Get Fire Safety Quote</a>
+                        </div>
+                        <div class="services__panel-visual">
+                            <div class="services__panel-image services__panel-image--fire">
+                                <div class="services__panel-overlay"></div>
+                                <div class="services__panel-stat">
+                                    <span class="services__panel-stat-number">100%</span>
+                                    <span class="services__panel-stat-label">Compliance Focused</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HYGIENE SERVICES -->
+                <div class="services__panel" data-panel="hygiene">
+                    <div class="services__panel-content">
+                        <div class="services__panel-text">
+                            <div class="services__panel-badge services__panel-badge--hygiene">AWHS</div>
+                            <h3 class="services__panel-title">A Wilkinson<br>Hygiene Services</h3>
+                            <p class="services__panel-desc">
+                                Professional hygiene and sanitation services for workplaces, commercial kitchens, and public spaces. We keep your environment clean, safe, and compliant with health regulations.
+                            </p>
+                            <ul class="services__panel-list">
+                                <li>Commercial Deep Cleaning</li>
+                                <li>Washroom Hygiene Services</li>
+                                <li>Kitchen & Food Area Sanitation</li>
+                                <li>Waste Management Solutions</li>
+                                <li>Scheduled Maintenance Plans</li>
+                            </ul>
+                            <a href="#quote" class="btn btn--hygiene">Get Hygiene Quote</a>
+                        </div>
+                        <div class="services__panel-visual">
+                            <div class="services__panel-image services__panel-image--hygiene">
+                                <div class="services__panel-overlay"></div>
+                                <div class="services__panel-stat">
+                                    <span class="services__panel-stat-number">5★</span>
+                                    <span class="services__panel-stat-label">Rated Service</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== WHY AWC ===== -->
+    <section class="why" id="about">
+        <div class="why__container">
+            <div class="why__header fade-up">
+                <p class="section-label">Why Choose Us</p>
+                <h2 class="section-title">Built On Trust,<br>Delivered With Precision.</h2>
+            </div>
+            <div class="why__grid">
+                <div class="why__card fade-up">
+                    <div class="why__card-number">01</div>
+                    <h3 class="why__card-title">One Call, Total Cover</h3>
+                    <p class="why__card-desc">Pest control, fire safety, and hygiene — all under one roof. One point of contact, one trusted company.</p>
+                </div>
+                <div class="why__card fade-up" style="animation-delay: 0.1s">
+                    <div class="why__card-number">02</div>
+                    <h3 class="why__card-title">London & South East</h3>
+                    <p class="why__card-desc">Rapid response across London and the surrounding areas. We're local, we're fast, and we're always available.</p>
+                </div>
+                <div class="why__card fade-up" style="animation-delay: 0.2s">
+                    <div class="why__card-number">03</div>
+                    <h3 class="why__card-title">No Hidden Costs</h3>
+                    <p class="why__card-desc">Transparent pricing with detailed quotes upfront. What we quote is what you pay — no surprises, no extras.</p>
+                </div>
+                <div class="why__card fade-up" style="animation-delay: 0.3s">
+                    <div class="why__card-number">04</div>
+                    <h3 class="why__card-title">Certified & Insured</h3>
+                    <p class="why__card-desc">Fully qualified technicians, industry certifications, and comprehensive insurance for complete peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== QUOTE / CONTACT ===== -->
+    <section class="quote" id="quote">
+        <div class="quote__container">
+            <div class="quote__left fade-up">
+                <p class="section-label">Get Started</p>
+                <h2 class="section-title section-title--light">Get Your Free<br>Quote Today.</h2>
+                <p class="quote__desc">Tell us what you need and we'll get back to you within 2 hours during business hours. No obligation, no pressure.</p>
+                <div class="quote__contact-info">
+                    <div class="quote__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92V19.92C22 20.48 21.56 20.93 21 20.97C20.63 21 20.25 21.01 19.88 21C14.52 20.44 9.47 18.27 5.44 14.56C1.73 11.03 -0.27 6.27 0.03 1.35C0.07 0.78 0.52 0.33 1.08 0.33H4.08C4.58 0.33 5 0.71 5.05 1.2C5.14 2.09 5.33 2.96 5.61 3.8L3.79 5.62C5.85 9.35 8.98 12.48 12.71 14.54L14.53 12.72C15.37 13 16.24 13.19 17.13 13.28C17.62 13.33 18 13.75 18 14.25V16.92H22Z" transform="translate(1,1)"/></svg>
+                        <span>Call us anytime</span>
+                    </div>
+                    <div class="quote__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 4L12 13L2 4"/></svg>
+                        <span>info@awcgroup.uk</span>
+                    </div>
+                    <div class="quote__contact-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2Z"/><circle cx="12" cy="9" r="3"/></svg>
+                        <span>London & South East</span>
+                    </div>
+                </div>
+            </div>
+            <div class="quote__right fade-up" style="animation-delay: 0.15s">
+                <form class="quote__form" id="quoteForm">
+                    <div class="quote__form-row">
+                        <div class="quote__form-group">
+                            <label class="quote__form-label">First Name</label>
+                            <input type="text" class="quote__form-input" placeholder="John" required>
+                        </div>
+                        <div class="quote__form-group">
+                            <label class="quote__form-label">Last Name</label>
+                            <input type="text" class="quote__form-input" placeholder="Smith" required>
+                        </div>
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Email</label>
+                        <input type="email" class="quote__form-input" placeholder="john@example.com" required>
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Phone</label>
+                        <input type="tel" class="quote__form-input" placeholder="+44 7XXX XXX XXX">
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Service Required</label>
+                        <select class="quote__form-input quote__form-select" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option value="pest">Pest Control</option>
+                            <option value="fire">Fire Safety</option>
+                            <option value="hygiene">Hygiene Services</option>
+                            <option value="multiple">Multiple Services</option>
+                        </select>
+                    </div>
+                    <div class="quote__form-group">
+                        <label class="quote__form-label">Tell us about your needs</label>
+                        <textarea class="quote__form-input quote__form-textarea" placeholder="Briefly describe what you need help with..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full">
+                        Send Quote Request
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <img src="assets/AWC-Brand-Logo-Flat-e1769148801666.webp" alt="AWC Group" class="footer__logo-img">
+                    <p class="footer__tagline">A Wilkinson Company Ltd.<br>Protecting what matters most.</p>
+                </div>
+                <div class="footer__links">
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Services</h4>
+                        <a href="#" class="footer__link">Pest Control</a>
+                        <a href="#" class="footer__link">Fire Safety</a>
+                        <a href="#" class="footer__link">Hygiene Services</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Company</h4>
+                        <a href="#" class="footer__link">About Us</a>
+                        <a href="#" class="footer__link">Contact</a>
+                        <a href="#" class="footer__link">Get A Quote</a>
+                    </div>
+                    <div class="footer__col">
+                        <h4 class="footer__col-title">Legal</h4>
+                        <a href="#" class="footer__link">Privacy Policy</a>
+                        <a href="#" class="footer__link">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 A Wilkinson Company Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
