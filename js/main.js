@@ -170,9 +170,12 @@ document.addEventListener('DOMContentLoaded', () => {
                         quoteForm.reset();
                     }, 3000);
                 } else {
-                    throw new Error('Send failed');
+                    const errData = await res.json().catch(() => ({}));
+                    console.error('Form error:', res.status, errData);
+                    throw new Error(errData.error || 'Send failed');
                 }
             } catch (err) {
+                console.error('Form submission error:', err);
                 btn.innerHTML = 'Something went wrong — try again';
                 btn.style.background = '#dc2626';
                 setTimeout(() => {
