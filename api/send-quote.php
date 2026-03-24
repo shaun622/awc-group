@@ -108,7 +108,7 @@ $htmlBody = "
 </html>";
 
 $data = [
-    'from' => 'AWC Group <quotes@contact.awcgroup.uk>',
+    'from' => 'AWC Group <quotes@awcgroup.uk>',
     'to' => [NOTIFY_EMAIL],
     'subject' => "New {$serviceLabel} Quote — {$firstName} {$lastName}",
     'html' => $htmlBody,
