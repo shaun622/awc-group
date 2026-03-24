@@ -1209,6 +1209,12 @@ button {
     color: var(--color-hygiene);
 }
 
+.services__panel-logo {
+    max-width: 140px;
+    height: auto;
+    margin-bottom: 16px;
+}
+
 .services__panel-title {
     font-size: clamp(28px, 4vw, 36px);
     font-weight: 800;
