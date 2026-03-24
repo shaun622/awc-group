@@ -96,6 +96,10 @@ $htmlBody = "
       <div class='field-value'>{$phone}</div>
     </div>
     <div class='field'>
+      <div class='field-label'>Service Required</div>
+      <div class='field-value' style='display:inline-block;background:{$color};color:#fff;padding:4px 14px;border-radius:100px;font-size:14px;font-weight:600;'>{$serviceLabel}</div>
+    </div>
+    <div class='field'>
       <div class='field-label'>Message</div>
       <div class='message-box'>{$message}</div>
     </div>
