@@ -286,24 +286,24 @@
                     <div class="quote__form-row">
                         <div class="quote__form-group">
                             <label class="quote__form-label">First Name</label>
-                            <input type="text" class="quote__form-input" placeholder="John" required>
+                            <input type="text" name="firstName" class="quote__form-input" placeholder="John" required>
                         </div>
                         <div class="quote__form-group">
                             <label class="quote__form-label">Last Name</label>
-                            <input type="text" class="quote__form-input" placeholder="Smith" required>
+                            <input type="text" name="lastName" class="quote__form-input" placeholder="Smith">
                         </div>
                     </div>
                     <div class="quote__form-group">
                         <label class="quote__form-label">Email</label>
-                        <input type="email" class="quote__form-input" placeholder="john@example.com" required>
+                        <input type="email" name="email" class="quote__form-input" placeholder="john@example.com" required>
                     </div>
                     <div class="quote__form-group">
                         <label class="quote__form-label">Phone</label>
-                        <input type="tel" class="quote__form-input" placeholder="+44 7XXX XXX XXX">
+                        <input type="tel" name="phone" class="quote__form-input" placeholder="+44 7XXX XXX XXX" required>
                     </div>
                     <div class="quote__form-group">
                         <label class="quote__form-label">Tell us about your premises</label>
-                        <textarea class="quote__form-input quote__form-textarea" placeholder="Type of building, number of floors, current fire safety setup..." rows="4"></textarea>
+                        <textarea name="message" class="quote__form-input quote__form-textarea" placeholder="Type of building, number of floors, current fire safety setup..." rows="4" required></textarea>
                     </div>
                     <input type="hidden" name="service" value="fire-safety">
                     <button type="submit" class="btn btn--fire btn--full">

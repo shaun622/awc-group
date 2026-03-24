@@ -124,8 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const btn = quoteForm.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
-            const inputs = quoteForm.querySelectorAll('.quote__form-input');
-            const service = quoteForm.querySelector('input[name="service"]');
 
             btn.innerHTML = `
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" class="spin">
@@ -135,13 +133,19 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             btn.disabled = true;
 
+            // Use name attributes to reliably get values
+            const get = (name) => {
+                const el = quoteForm.querySelector(`[name="${name}"]`);
+                return el ? el.value : '';
+            };
+
             const payload = {
-                firstName: inputs[0]?.value || '',
-                lastName: inputs[1]?.value || '',
-                email: inputs[2]?.value || '',
-                phone: inputs[3]?.value || '',
-                message: inputs[4]?.value || '',
-                service: service?.value || 'general',
+                firstName: get('firstName'),
+                lastName: get('lastName'),
+                email: get('email'),
+                phone: get('phone'),
+                message: get('message'),
+                service: get('service') || 'general',
             };
 
             try {

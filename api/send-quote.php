@@ -42,6 +42,8 @@ $serviceLabels = [
     'pest-control' => 'Pest Control',
     'fire-safety' => 'Fire Safety',
     'hygiene-services' => 'Hygiene Services',
+    'multiple' => 'Multiple Services',
+    'other' => 'Other',
     'general' => 'General Enquiry',
 ];
 $serviceLabel = $serviceLabels[$service] ?? ucfirst($service);
@@ -50,6 +52,8 @@ $serviceColors = [
     'pest-control' => '#16a34a',
     'fire-safety' => '#dc2626',
     'hygiene-services' => '#2563eb',
+    'multiple' => '#1e3a5f',
+    'other' => '#1e3a5f',
     'general' => '#1e3a5f',
 ];
 $color = $serviceColors[$service] ?? '#1e3a5f';

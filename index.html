@@ -367,36 +367,36 @@
                     <div class="quote__form-row">
                         <div class="quote__form-group">
                             <label class="quote__form-label">First Name</label>
-                            <input type="text" class="quote__form-input" placeholder="John" required>
+                            <input type="text" name="firstName" class="quote__form-input" placeholder="John" required>
                         </div>
                         <div class="quote__form-group">
                             <label class="quote__form-label">Last Name</label>
-                            <input type="text" class="quote__form-input" placeholder="Smith" required>
+                            <input type="text" name="lastName" class="quote__form-input" placeholder="Smith">
                         </div>
                     </div>
                     <div class="quote__form-group">
                         <label class="quote__form-label">Email</label>
-                        <input type="email" class="quote__form-input" placeholder="john@example.com" required>
+                        <input type="email" name="email" class="quote__form-input" placeholder="john@example.com" required>
                     </div>
                     <div class="quote__form-group">
                         <label class="quote__form-label">Phone</label>
-                        <input type="tel" class="quote__form-input" placeholder="+44 7XXX XXX XXX">
+                        <input type="tel" name="phone" class="quote__form-input" placeholder="+44 7XXX XXX XXX" required>
                     </div>
                     <div class="quote__form-group">
                         <label class="quote__form-label">Service Required</label>
-                        <select class="quote__form-input quote__form-select" required>
+                        <select name="service" class="quote__form-input quote__form-select" required>
                             <option value="" disabled selected>Select a service</option>
-                            <option value="pest">Pest Control</option>
-                            <option value="fire">Fire Safety</option>
-                            <option value="hygiene">Hygiene Services</option>
+                            <option value="pest-control">Pest Control</option>
+                            <option value="fire-safety">Fire Safety</option>
+                            <option value="hygiene-services">Hygiene Services</option>
                             <option value="multiple">Multiple Services</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
                     <div class="quote__form-group">
                         <label class="quote__form-label">Tell us about your needs</label>
-                        <textarea class="quote__form-input quote__form-textarea" placeholder="Briefly describe what you need help with..." rows="4"></textarea>
+                        <textarea name="message" class="quote__form-input quote__form-textarea" placeholder="Briefly describe what you need help with..." rows="4" required></textarea>
                     </div>
-                    <input type="hidden" name="service" value="general">
                     <button type="submit" class="btn btn--primary btn--full">
                         Send Quote Request
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
