@@ -384,7 +384,7 @@ button {
     box-shadow: var(--shadow-xl);
     border: 1px solid var(--color-gray-100);
     padding: 8px;
-    min-width: 200px;
+    min-width: 240px;
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s var(--ease-out);
@@ -438,15 +438,17 @@ button {
 }
 
 .nav__dropdown-coming-soon {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     background: var(--color-gray-100);
     color: var(--color-gray-400);
-    padding: 2px 8px;
+    padding: 2px 6px;
     border-radius: 100px;
-    margin-left: 8px;
+    margin-left: auto;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 /* Mobile Sublinks */
