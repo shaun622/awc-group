@@ -27,6 +27,10 @@
     --color-hygiene-light: #eff6ff;
     --color-hygiene-dark: #1d4ed8;
 
+    --color-locksmith: #e97a1f;
+    --color-locksmith-light: #fff7ed;
+    --color-locksmith-dark: #c2650e;
+
     /* Typography */
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
@@ -207,6 +211,18 @@ button {
     background: var(--color-hygiene-dark);
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(37, 99, 235, 0.35);
+}
+
+.btn--locksmith {
+    background: var(--color-locksmith);
+    color: var(--color-white);
+    box-shadow: 0 4px 14px rgba(233, 122, 31, 0.3);
+}
+
+.btn--locksmith:hover {
+    background: var(--color-locksmith-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(233, 122, 31, 0.35);
 }
 
 .btn--full {
@@ -408,10 +424,30 @@ button {
 .nav__dropdown-item--pest .nav__dropdown-dot { background: var(--color-pest); }
 .nav__dropdown-item--fire .nav__dropdown-dot { background: var(--color-fire); }
 .nav__dropdown-item--hygiene .nav__dropdown-dot { background: var(--color-hygiene); }
+.nav__dropdown-item--locksmith .nav__dropdown-dot { background: var(--color-locksmith); }
 
 .nav__dropdown-item--pest:hover { color: var(--color-pest); }
 .nav__dropdown-item--fire:hover { color: var(--color-fire); }
 .nav__dropdown-item--hygiene:hover { color: var(--color-hygiene); }
+.nav__dropdown-item--locksmith:hover { color: var(--color-locksmith); }
+
+.nav__dropdown-item--coming-soon {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: default;
+}
+
+.nav__dropdown-coming-soon {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: var(--color-gray-100);
+    color: var(--color-gray-400);
+    padding: 2px 8px;
+    border-radius: 100px;
+    margin-left: 8px;
+}
 
 /* Mobile Sublinks */
 .mobile-menu__sublink {
@@ -616,6 +652,7 @@ button {
 .mobile-menu__service-card--pest::before { background: var(--color-pest); }
 .mobile-menu__service-card--fire::before { background: var(--color-fire); }
 .mobile-menu__service-card--hygiene::before { background: var(--color-hygiene); }
+.mobile-menu__service-card--locksmith::before { background: var(--color-locksmith); }
 
 .mobile-menu__service-card:hover,
 .mobile-menu__service-card:active {
@@ -662,6 +699,24 @@ button {
 .mobile-menu__service-card--hygiene .mobile-menu__service-icon {
     background: var(--color-hygiene-light);
     color: var(--color-hygiene);
+}
+
+.mobile-menu__service-card--locksmith .mobile-menu__service-icon {
+    background: var(--color-locksmith-light);
+    color: var(--color-locksmith);
+}
+
+.mobile-menu__service-card--coming-soon {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.mobile-menu__service-coming-soon {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-gray-400);
 }
 
 .mobile-menu__service-info {
@@ -928,6 +983,7 @@ button {
 .hero__card--pest::before { background: var(--color-pest); }
 .hero__card--fire::before { background: var(--color-fire); }
 .hero__card--hygiene::before { background: var(--color-hygiene); }
+.hero__card--locksmith::before { background: var(--color-locksmith); }
 
 .hero__card:hover {
     transform: translateX(8px);
@@ -966,6 +1022,11 @@ button {
 .hero__card--hygiene .hero__card-icon {
     background: var(--color-hygiene-light);
     color: var(--color-hygiene);
+}
+
+.hero__card--locksmith .hero__card-icon {
+    background: var(--color-locksmith-light);
+    color: var(--color-locksmith);
 }
 
 .hero__card span {
@@ -1142,6 +1203,22 @@ button {
 .services__tab-dot--pest { background: var(--color-pest); }
 .services__tab-dot--fire { background: var(--color-fire); }
 .services__tab-dot--hygiene { background: var(--color-hygiene); }
+.services__tab-dot--locksmith { background: var(--color-locksmith); }
+
+.services__tab--coming-soon {
+    opacity: 0.55;
+    position: relative;
+}
+
+.services__tab-coming-soon {
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-gray-400);
+    display: block;
+    margin-top: 2px;
+}
 
 .services__tab--active .services__tab-dot {
     background: rgba(255,255,255,0.5);
@@ -1207,6 +1284,11 @@ button {
 .services__panel-badge--hygiene {
     background: var(--color-hygiene-light);
     color: var(--color-hygiene);
+}
+
+.services__panel-badge--locksmith {
+    background: var(--color-locksmith-light);
+    color: var(--color-locksmith);
 }
 
 .services__panel-logo {
@@ -1285,6 +1367,10 @@ button {
 
 .services__panel-image--hygiene {
     background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80') center/cover no-repeat;
+}
+
+.services__panel-image--locksmith {
+    background: linear-gradient(135deg, var(--color-locksmith-light) 0%, var(--color-locksmith) 100%);
 }
 
 .services__panel-overlay {
@@ -1761,4 +1847,32 @@ button {
     .trust__number {
         font-size: 42px;
     }
+}
+
+/* ===== COMING SOON OVERLAY ===== */
+.services__panel-coming-soon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    border-radius: var(--radius-xl);
+}
+
+.services__panel-coming-soon-badge {
+    background: var(--color-white);
+    padding: 12px 28px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--color-gray-500);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
