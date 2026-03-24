@@ -119,11 +119,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // ===== FORM HANDLING =====
     const quoteForm = document.getElementById('quoteForm');
     if (quoteForm) {
-        quoteForm.addEventListener('submit', (e) => {
+        quoteForm.addEventListener('submit', async (e) => {
             e.preventDefault();
 
             const btn = quoteForm.querySelector('button[type="submit"]');
             const originalText = btn.innerHTML;
+            const inputs = quoteForm.querySelectorAll('.quote__form-input');
+            const service = quoteForm.querySelector('input[name="service"]');
 
             btn.innerHTML = `
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" class="spin">
@@ -133,23 +135,48 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             btn.disabled = true;
 
-            // Simulate send (replace with actual API call)
-            setTimeout(() => {
-                btn.innerHTML = `
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-                        <path d="M20 6L9 17L4 12"/>
-                    </svg>
-                    Quote Request Sent!
-                `;
-                btn.style.background = '#16a34a';
+            const payload = {
+                firstName: inputs[0]?.value || '',
+                lastName: inputs[1]?.value || '',
+                email: inputs[2]?.value || '',
+                phone: inputs[3]?.value || '',
+                message: inputs[4]?.value || '',
+                service: service?.value || 'general',
+            };
 
+            try {
+                const res = await fetch('/api/send-quote.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                });
+
+                if (res.ok) {
+                    btn.innerHTML = `
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                            <path d="M20 6L9 17L4 12"/>
+                        </svg>
+                        Quote Request Sent!
+                    `;
+                    btn.style.background = '#16a34a';
+                    setTimeout(() => {
+                        btn.innerHTML = originalText;
+                        btn.disabled = false;
+                        btn.style.background = '';
+                        quoteForm.reset();
+                    }, 3000);
+                } else {
+                    throw new Error('Send failed');
+                }
+            } catch (err) {
+                btn.innerHTML = 'Something went wrong — try again';
+                btn.style.background = '#dc2626';
                 setTimeout(() => {
                     btn.innerHTML = originalText;
                     btn.disabled = false;
                     btn.style.background = '';
-                    quoteForm.reset();
                 }, 3000);
-            }, 1500);
+            }
         });
     }
 
