@@ -1436,31 +1436,56 @@ button {
 }
 
 .why__card {
-    padding: 36px 28px;
+    padding: 40px 32px;
     border-radius: var(--radius-lg);
-    border: 1px solid var(--color-gray-100);
+    border: 1px solid transparent;
+    background: var(--color-white);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
     transition: all 0.4s var(--ease-out);
     position: relative;
+    overflow: hidden;
 }
+
+.why__card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+}
+
+.why__card:nth-child(1)::before { background: linear-gradient(90deg, var(--color-pest), var(--color-pest-dark)); }
+.why__card:nth-child(2)::before { background: linear-gradient(90deg, var(--color-fire), var(--color-fire-dark)); }
+.why__card:nth-child(3)::before { background: linear-gradient(90deg, var(--color-hygiene), var(--color-hygiene-dark)); }
+.why__card:nth-child(4)::before { background: linear-gradient(90deg, var(--color-locksmith), var(--color-locksmith-dark)); }
 
 .why__card:hover {
-    border-color: var(--color-gray-200);
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-4px);
+    transform: translateY(-6px);
 }
 
+.why__card:nth-child(1):hover { box-shadow: 0 16px 48px rgba(22, 163, 74, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04); }
+.why__card:nth-child(2):hover { box-shadow: 0 16px 48px rgba(220, 38, 38, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04); }
+.why__card:nth-child(3):hover { box-shadow: 0 16px 48px rgba(37, 99, 235, 0.12), 0 4px 12px rgba(0, 0, 0, 0.04); }
+.why__card:nth-child(4):hover { box-shadow: 0 16px 48px rgba(229, 198, 143, 0.25), 0 4px 12px rgba(0, 0, 0, 0.04); }
+
 .why__card-number {
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 800;
-    color: var(--color-gray-100);
     letter-spacing: -0.04em;
     line-height: 1;
     margin-bottom: 20px;
-    transition: color 0.4s var(--ease-out);
+    opacity: 0.15;
+    transition: opacity 0.4s var(--ease-out);
 }
 
+.why__card:nth-child(1) .why__card-number { color: var(--color-pest); }
+.why__card:nth-child(2) .why__card-number { color: var(--color-fire); }
+.why__card:nth-child(3) .why__card-number { color: var(--color-hygiene); }
+.why__card:nth-child(4) .why__card-number { color: var(--color-locksmith); }
+
 .why__card:hover .why__card-number {
-    color: var(--color-pest-light);
+    opacity: 0.25;
 }
 
 .why__card-title {
@@ -1474,7 +1499,7 @@ button {
 .why__card-desc {
     font-size: 15px;
     color: var(--color-gray-500);
-    line-height: 1.65;
+    line-height: 1.7;
 }
 
 /* ===== QUOTE SECTION ===== */
