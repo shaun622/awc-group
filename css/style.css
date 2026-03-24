@@ -1148,12 +1148,12 @@ button {
 .services__tabs {
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     margin-bottom: 48px;
     background: var(--color-white);
     padding: 6px;
     border-radius: 100px;
-    max-width: 540px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
     box-shadow: var(--shadow-sm);
@@ -1163,9 +1163,9 @@ button {
 .services__tab {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 12px 24px;
-    font-size: 14px;
+    gap: 6px;
+    padding: 10px 18px;
+    font-size: 13px;
     font-weight: 600;
     color: var(--color-gray-500);
     border-radius: 100px;
