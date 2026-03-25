@@ -1681,6 +1681,47 @@ button {
     color: var(--color-white);
 }
 
+.footer__link--muted {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.footer__coming-soon {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: rgba(255,255,255,0.08);
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 6px;
+    color: var(--color-gray-500);
+}
+
+.footer__download {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--color-gray-400);
+    padding: 8px 16px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: var(--radius-md);
+    transition: all 0.3s var(--ease-out);
+    text-decoration: none;
+}
+
+.footer__download:hover {
+    color: var(--color-white);
+    border-color: rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.05);
+    transform: translateY(-1px);
+}
+
+.footer__download svg {
+    flex-shrink: 0;
+}
+
 .footer__bottom {
     padding-top: 24px;
     font-size: 13px;
