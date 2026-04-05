@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(grep -n \"animations.css\" \"C:/Users/USER/Claude Projects/AWC Group\"/*.html)",
+      "Bash(grep -n \"tel:\" \"C:/Users/USER/Claude Projects/AWC Group\"/*.html)",
+      "Bash(grep -n \"<img\" \"C:/Users/USER/Claude Projects/AWC Group\"/*.html)",
+      "Bash(grep -E \"href=\"\"#[^\"\"]*\"\"\" \"C:/Users/USER/Claude Projects/AWC Group\"/*.html)",
+      "Bash(grep -n \"<img\" *.html)",
+      "Bash(grep -n \"href=\"\"#\" *.html)",
+      "Bash(grep -n \"aria-label\" *.html)",
+      "Bash(grep -n \"nav__logo\" *.html)",
+      "Bash(mkdir -p Assets/logos)",
+      "Bash(cp \"Assets/A Wilkinson Logo/AWC Brand Logo Flat.png\" Assets/logos/awc-brand-flat.png)",
+      "Bash(cp \"Assets/A Wilkinson Logo/AWC Brand Logo.png\" Assets/logos/awc-brand.png)",
+      "Bash(cp \"Assets/A Wilkinson Logo/AWC Brand Logo Circle.png\" Assets/logos/awc-brand-circle.png)",
+      "Bash(cp \"Assets/A Wilkinson Logo/AWC Brand Logo Side.png\" Assets/logos/awc-brand-side.png)",
+      "Bash(where magick:*)",
+      "Bash(where convert:*)",
+      "Bash(where python:*)",
+      "Bash(node -e \"console.log\\(''node works''\\)\")",
+      "Bash(npm list:*)",
+      "Bash(npm install:*)",
+      "Bash(node -e \":*)"
+    ]
+  }
+}
