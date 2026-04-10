@@ -554,7 +554,7 @@ button {
 }
 
 .mobile-menu__link {
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 800;
     color: var(--color-gray-900);
     letter-spacing: -0.03em;
@@ -708,8 +708,34 @@ button {
     color: var(--color-locksmith);
 }
 
+.mobile-menu__service-card--active {
+    background: var(--color-white);
+    border-color: transparent;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.03);
+}
+
+.mobile-menu__coming-soon-row {
+    display: flex;
+    gap: 10px;
+}
+
+.mobile-menu__coming-soon-row .mobile-menu__service-card {
+    flex: 1;
+    padding: 12px 14px;
+    gap: 10px;
+}
+
+.mobile-menu__coming-soon-row .mobile-menu__service-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.mobile-menu__coming-soon-row .mobile-menu__service-name {
+    font-size: 13px;
+}
+
 .mobile-menu__service-card--coming-soon {
-    opacity: 0.5;
+    opacity: 0.6;
     pointer-events: none;
 }
 
@@ -814,9 +840,10 @@ button {
 
 .mobile-menu__contact {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 4px;
     font-size: 13px;
     color: var(--color-gray-400);
 }
@@ -1684,6 +1711,8 @@ button {
 .footer__link--muted {
     opacity: 0.5;
     pointer-events: none;
+    user-select: none;
+    cursor: default;
 }
 
 .footer__coming-soon {

@@ -54,14 +54,13 @@
         <div class="mobile-menu__bg"></div>
         <div class="mobile-menu__inner">
             <div class="mobile-menu__nav">
-                <a href="index.html#services" class="mobile-menu__link" data-index="1">Services</a>
-                <a href="index.html#about" class="mobile-menu__link" data-index="2">About</a>
-                <a href="#quote" class="mobile-menu__link" data-index="3">Contact</a>
+                <a href="index.html#about" class="mobile-menu__link" data-index="1">About</a>
+                <a href="#quote" class="mobile-menu__link" data-index="2">Contact</a>
             </div>
             <div class="mobile-menu__services">
                 <p class="mobile-menu__services-label">Our Divisions</p>
                 <div class="mobile-menu__services-grid">
-                    <a href="pest-control.html" class="mobile-menu__service-card mobile-menu__service-card--pest" data-index="4">
+                    <a href="pest-control.html" class="mobile-menu__service-card mobile-menu__service-card--pest mobile-menu__service-card--active" data-index="4">
                         <div class="mobile-menu__service-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L8 8H16L12 2Z"/><circle cx="12" cy="14" r="5"/><path d="M7 14H3M21 14H17"/></svg>
                         </div>
@@ -71,17 +70,7 @@
                         </div>
                         <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
                     </a>
-                    <div class="mobile-menu__service-card mobile-menu__service-card--fire mobile-menu__service-card--coming-soon" data-index="5">
-                        <div class="mobile-menu__service-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 4 10 4 14C4 18.4 7.6 22 12 22C16.4 22 20 18.4 20 14C20 10 16 6 12 2Z"/></svg>
-                        </div>
-                        <div class="mobile-menu__service-info">
-                            <span class="mobile-menu__service-name">Fire Safety</span>
-                            <span class="mobile-menu__service-tag">AWFS</span>
-                            <span class="mobile-menu__service-coming-soon">Coming Soon</span>
-                        </div>
-                    </div>
-                    <a href="hygiene-services.html" class="mobile-menu__service-card mobile-menu__service-card--hygiene" data-index="6">
+                    <a href="hygiene-services.html" class="mobile-menu__service-card mobile-menu__service-card--hygiene mobile-menu__service-card--active" data-index="5">
                         <div class="mobile-menu__service-icon">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22S20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z"/></svg>
                         </div>
@@ -91,14 +80,24 @@
                         </div>
                         <svg class="mobile-menu__service-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12H19M19 12L13 6M19 12L13 18"/></svg>
                     </a>
-                    <div class="mobile-menu__service-card mobile-menu__service-card--locksmith mobile-menu__service-card--coming-soon" data-index="7">
-                        <div class="mobile-menu__service-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 2L19 4M15.5 7.5L19 4M19 4L22 7L18.5 10.5M15.5 7.5L10.5 12.5C9 11 6.5 11 5 12.5C3.5 14 3.5 16.5 5 18C6.5 19.5 9 19.5 10.5 18C12 16.5 12 14 10.5 12.5M15.5 7.5L12 11"/></svg>
+                    <div class="mobile-menu__coming-soon-row">
+                        <div class="mobile-menu__service-card mobile-menu__service-card--fire mobile-menu__service-card--coming-soon" data-index="6">
+                            <div class="mobile-menu__service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C8 6 4 10 4 14C4 18.4 7.6 22 12 22C16.4 22 20 18.4 20 14C20 10 16 6 12 2Z"/></svg>
+                            </div>
+                            <div class="mobile-menu__service-info">
+                                <span class="mobile-menu__service-name">Fire Safety</span>
+                                <span class="mobile-menu__service-coming-soon">Coming Soon</span>
+                            </div>
                         </div>
-                        <div class="mobile-menu__service-info">
-                            <span class="mobile-menu__service-name">Locksmith</span>
-                            <span class="mobile-menu__service-tag">AWLS</span>
-                            <span class="mobile-menu__service-coming-soon">Coming Soon</span>
+                        <div class="mobile-menu__service-card mobile-menu__service-card--locksmith mobile-menu__service-card--coming-soon" data-index="7">
+                            <div class="mobile-menu__service-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 2L19 4M15.5 7.5L19 4M19 4L22 7L18.5 10.5M15.5 7.5L10.5 12.5C9 11 6.5 11 5 12.5C3.5 14 3.5 16.5 5 18C6.5 19.5 9 19.5 10.5 18C12 16.5 12 14 10.5 12.5M15.5 7.5L12 11"/></svg>
+                            </div>
+                            <div class="mobile-menu__service-info">
+                                <span class="mobile-menu__service-name">Locksmith</span>
+                                <span class="mobile-menu__service-coming-soon">Coming Soon</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -110,7 +109,6 @@
                 </a>
                 <div class="mobile-menu__contact">
                     <span>info@awcgroup.uk</span>
-                    <span class="mobile-menu__divider">&middot;</span>
                     <span>Beds, Bucks, Herts & Surrounding Areas</span>
                 </div>
             </div>
@@ -363,9 +361,9 @@
                     <div class="footer__col">
                         <h4 class="footer__col-title">Services</h4>
                         <a href="pest-control.html" class="footer__link">Pest Control</a>
-                        <a href="fire-safety.html" class="footer__link">Fire Safety</a>
                         <a href="hygiene-services.html" class="footer__link">Hygiene Services</a>
-                        <a href="#" class="footer__link footer__link--muted">Locksmith <span class="footer__coming-soon">Soon</span></a>
+                        <span class="footer__link footer__link--muted">Fire Safety <span class="footer__coming-soon">Soon</span></span>
+                        <span class="footer__link footer__link--muted">Locksmith <span class="footer__coming-soon">Soon</span></span>
                     </div>
                     <div class="footer__col">
                         <h4 class="footer__col-title">Company</h4>
