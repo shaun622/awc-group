@@ -838,6 +838,25 @@ button {
     box-shadow: 0 6px 28px rgba(37, 99, 235, 0.4);
 }
 
+.mobile-menu__nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.mobile-menu__nav-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-gray-500);
+    text-decoration: none;
+    transition: color 0.3s var(--ease-out);
+}
+
+.mobile-menu__nav-link:hover {
+    color: var(--color-gray-900);
+}
+
 .mobile-menu__contact {
     display: flex;
     flex-direction: column;
